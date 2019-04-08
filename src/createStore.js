@@ -12,11 +12,12 @@ export default function createStore(reducer) {
         return state;
     }
 
+    dispatch({ type: '@@INIT' })
+
     return { dispatch, getState }
 }
 
 
 function render() {
     const container = document.getElementById('container');
-    container.textContent = 
 }
